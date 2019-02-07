@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>RestSevices</display-name>
+	<servlet>
+		<description>Rest sevices</description>
+		<servlet-name>Rest sevices servlet</servlet-name>
+		<servlet-class>Yours_AppServer_Servlet_Class</servlet-class> <!--TODO: change to yours-->
+		<init-param>
+			<param-name>javax.ws.rs.Application</param-name>
+			<param-value>demos.jee.restservices.RestApplication</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Rest sevices servlet</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+</web-app>
